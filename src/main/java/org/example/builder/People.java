@@ -1,6 +1,7 @@
 package org.example.builder;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 /**
@@ -8,6 +9,8 @@ import lombok.ToString;
  * @since 2022/6/16 21:52
  */
 @ToString
+@Data
+@NoArgsConstructor
 public class People {
     private String name;
 
