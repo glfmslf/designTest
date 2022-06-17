@@ -3,6 +3,9 @@ package org.example.builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import lombok.experimental.Accessors;
+
+import java.io.Serializable;
 
 /**
  * @author yuyou
@@ -11,7 +14,7 @@ import lombok.ToString;
 @ToString
 @Data
 @NoArgsConstructor
-public class People {
+public class People implements Serializable {
     private String name;
 
     private String gender;
@@ -30,6 +33,7 @@ public class People {
 
 
     @Data
+    @Accessors(chain = true)
     public static class Builder{
         private String name;
 
