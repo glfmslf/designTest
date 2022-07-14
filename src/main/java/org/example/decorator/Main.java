@@ -6,6 +6,9 @@ package org.example.decorator;
  */
 public class Main {
     public static void main(String[] args) {
-
+        Drink longBlack = new LongBlack();
+        longBlack = new Milk(longBlack);
+        longBlack = new Soy(longBlack);
+        System.out.println(longBlack.getName() + ":" + longBlack.coast());
     }
 }
