@@ -1,6 +1,7 @@
 package org.example.observer;
 
-import com.google.common.eventbus.EventBus;
+
+import org.example.observer.eventbus.EventBus;
 
 import java.util.List;
 

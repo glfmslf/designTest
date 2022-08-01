@@ -1,6 +1,7 @@
 package org.example.observer;
 
-import com.google.common.eventbus.Subscribe;
+
+import org.example.observer.eventbus.Subscribe;
 
 /**
  * @author yuyou

@@ -14,7 +14,6 @@ public class Main {
         Subject subject = new Subject();
         List<Object> objects = Lists.newArrayList(new BuyObserver(), new WorkObserver());
         subject.regiester(objects);
-
         subject.push();
 
     }
