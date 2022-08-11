@@ -1,6 +1,7 @@
 package org.example.state;
 
 /**
+ * 分支逻辑法
  * @author yuyou
  * @since 2022/8/10 18:12
  */

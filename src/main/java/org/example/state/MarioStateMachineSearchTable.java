@@ -1,6 +1,7 @@
 package org.example.state;
 
 /**
+ * 查表法
  * @author yuyou
  * @since 2022/8/10 20:19
  */
