@@ -6,20 +6,41 @@ package org.example.state;
  */
 public class Main {
     public static void main(String[] args) {
-        MarioStateMachineSearchTable marioStateMachine = new MarioStateMachineSearchTable();
+//        MarioStateMachineSearchTable marioStateMachine = new MarioStateMachineSearchTable();
+//
+//        marioStateMachine.obtainMushRoom();
+//        System.out.println(marioStateMachine.getScore() + "  " + marioStateMachine.getCurrentState());
+//        marioStateMachine.obtainMushRoom();
+//        System.out.println(marioStateMachine.getScore() + "  " + marioStateMachine.getCurrentState());
+//        marioStateMachine.obtainFire();
+//        System.out.println(marioStateMachine.getScore() + "  " + marioStateMachine.getCurrentState());
+//        marioStateMachine.obtainFire();
+//        System.out.println(marioStateMachine.getScore() + "  " + marioStateMachine.getCurrentState());
+//        marioStateMachine.obtainFire();
+//        System.out.println(marioStateMachine.getScore() + "  " + marioStateMachine.getCurrentState());
+//        marioStateMachine.obtainFire();
+//        System.out.println(marioStateMachine.getScore() + "  " + marioStateMachine.getCurrentState());
+        MarioStateMachineState marioStateMachineState = new MarioStateMachineState();
+        marioStateMachineState.setState(SuperMario.getInstance());
+        marioStateMachineState.obtainMushRoom();
+        System.out.println(marioStateMachineState.getState() + "   " + marioStateMachineState.getScore());
 
-        marioStateMachine.obtainMushRoom();
-        System.out.println(marioStateMachine.getScore() + "  " + marioStateMachine.getCurrentState());
-        marioStateMachine.obtainMushRoom();
-        System.out.println(marioStateMachine.getScore() + "  " + marioStateMachine.getCurrentState());
-        marioStateMachine.obtainFire();
-        System.out.println(marioStateMachine.getScore() + "  " + marioStateMachine.getCurrentState());
-        marioStateMachine.obtainFire();
-        System.out.println(marioStateMachine.getScore() + "  " + marioStateMachine.getCurrentState());
-        marioStateMachine.obtainFire();
-        System.out.println(marioStateMachine.getScore() + "  " + marioStateMachine.getCurrentState());
-        marioStateMachine.obtainFire();
-        System.out.println(marioStateMachine.getScore() + "  " + marioStateMachine.getCurrentState());
+        marioStateMachineState.meetMonster();
+        System.out.println(marioStateMachineState.getState() + "   " + marioStateMachineState.getScore());
+//        marioStateMachineState.obtainCaps();
+//        System.out.println(marioStateMachineState.getState() + "   " + marioStateMachineState.getScore());
+
+        marioStateMachineState.obtainFire();
+        System.out.println(marioStateMachineState.getState() + "   " + marioStateMachineState.getScore());
+
+        marioStateMachineState.meetMonster();
+        System.out.println(marioStateMachineState.getState() + "   " + marioStateMachineState.getScore());
+
+        marioStateMachineState.obtainCaps();
+        System.out.println(marioStateMachineState.getState() + "   " + marioStateMachineState.getScore());
+
+        marioStateMachineState.obtainMushRoom();
+        System.out.println(marioStateMachineState.getState() + "   " + marioStateMachineState.getScore());
 
     }
 }
