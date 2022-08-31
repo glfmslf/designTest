@@ -31,7 +31,6 @@ public class Main {
             resourceFile.accept(new Extractor());
         }
 
-
         for (ResourceFile resourceFile : listAllFile(fileEnd)) {
             resourceFile.accept(new Compressor());
 
