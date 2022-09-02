@@ -23,6 +23,9 @@ public class InputText {
     }
 
     public void restoreSnapshot(Snapshot snapshot) {
+        if (snapshot == null) {
+            return;
+        }
         this.text.replace(0, this.text.length(), snapshot.getText());
     }
 }

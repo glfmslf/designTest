@@ -12,11 +12,13 @@ public class Main {
         SnapshotHolder snapshotsHolder = new SnapshotHolder();
         Scanner scanner = new Scanner(System.in);
         while (scanner.hasNext()) {
-            String input = scanner.next();
+            String input = scanner.nextLine();
             if (input.equals(":list")) {
                 System.out.println(inputText);
             } else if (input.equals(":undo")) {
                 Snapshot snapshot = snapshotsHolder.pop();
+                System.out.println("撤销:" + snapshot);
+
                 inputText.restoreSnapshot(snapshot);
             } else {
                 snapshotsHolder.push(inputText.createSnapshot());
